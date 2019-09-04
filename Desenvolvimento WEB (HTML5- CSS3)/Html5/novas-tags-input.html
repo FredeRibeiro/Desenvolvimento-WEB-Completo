@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Noticias Cidade - Seu site de noticias</title>
+
+	<!--Normalize CSS-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!--Estilo Customizado-->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<!--[if lt IE 9]>
+	 <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+
+
+
+</head>
+
+<body>
+
+	<form>
+
+		<!-- required - Obrigação digitar, Auto Focus - Inicio da digitação.-->
+
+		<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" autofocus>
+	<br><br>
+
+		<label for="email">Email:</label>
+			<input type="email" id="email">
+	<br><br>
+
+		<label for="numero">Numero:</label>
+			<input type="number" id="numero" min="1" max="20" step="5">
+	<br><br>
+
+		<label for="url">URL:</label>
+			<input type="url" id="url" placeholder="htt://www.exemplo.com">
+	<br><br>
+
+		<label for="pesquisa">Pesquisa:</label>
+			<input type="search" id="pesquisa">
+	<br><br>
+
+		<label for="range">Range:</label>
+			<input type="range" id="range" min="1" max="100" value="50">
+	<br><br>
+
+		<label for="data">Data:</label>
+			<input type="date" id="data">
+	<br><br>
+
+		<label for="cor">Cor:</label>
+			<input type="color" name="cor" id="cor">
+	<br><br>
+			<input type="submit" name="" value="Enviar">
+	</form>
+
+</body>
+</html>

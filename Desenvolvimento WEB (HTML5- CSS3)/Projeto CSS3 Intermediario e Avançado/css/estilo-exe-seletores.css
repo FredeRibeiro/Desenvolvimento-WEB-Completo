@@ -1,0 +1,49 @@
+/*****************/
+/*Seletor Universal*/
+
+/*
+
+*{
+	border: 1px solid red;
+
+}
+/*Seletor Texto
+h1{
+	color: green;
+}
+/*Seletor Classe
+.verde{
+	color: green;
+}
+
+p.verde{
+	color: green;
+}
+/*Seletor ID
+#cabecalho{
+	border: 1px solid blue;
+}
+
+/*Seletor Filho
+li>a {
+
+	color: red;
+	text-decoration: none;
+
+}
+/*Seletor Descendente
+p a {
+	color: green;
+	text-decoration: none;
+}
+
+/*Seletor Irmão adsaccentes
+h1+p{
+	color: red;
+}
+
+/*Seletor irmão geral
+h1~p{
+	color: pink;
+}
+*/
