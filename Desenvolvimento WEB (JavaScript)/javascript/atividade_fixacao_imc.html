@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade Fixacao IMC</title>
+
+    <script>
+        var nome = prompt('Digite seu Nome:')
+        var altura = prompt('Digite sua Altura: (cm)')
+        var peso = prompt('Digite seu peso:')
+
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+
+        altura = altura / 100
+
+        var indice = peso / (altura * altura)
+        var calssificacao = ''
+
+        if (indice < 16) {
+            calssificacao = 'Baixo Peso - Muito Grave'
+        }
+        if (indice >= 16 && indice < 16.99) {
+            calssificacao = 'Baixo Peso - Grave'
+        }
+        if (indice >= 17 && indice < 18.49) {
+            calssificacao = 'Baixo Peso'
+        }
+        if (indice >= 18.50 && indice < 24.99) {
+            calssificacao = 'Peso Normal'
+        }
+        if (indice >= 25 && indice < 29.99) {
+            calssificacao = 'Sobrepeso'
+        }
+        if (indice >= 30 && indice < 34.99) {
+            calssificacao = 'Obesidade Grau I'
+        }
+        if (indice >= 35 && indice < 39.99) {
+            calssificacao = 'Obesidade Grau II'
+        }
+        if (indice >= 40) {
+            calssificacao = 'Obesidade Grau III'
+        }
+
+        document.write(nome + ' Seu indice de massa é: ' + indice + ' .Portanto a seu IMC e classificado como: ' + calssificacao)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

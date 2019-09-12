@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cálculo Aritméticos de soma e subtração</title>
+</head>
+
+<script>
+    var n1 = prompt('Digite o N1')
+    var operacao = prompt('Digite a operação Soma ou Subtração')
+    var n2 = prompt('Digite o N2')
+
+    n1 = parseFloat(n1)
+    n2 = parseFloat(n2)
+
+    function soma(a, b) {
+        var resultado = n1 + n2
+        return resultado
+    }
+
+    function subtracao(a, b) {
+        var resultado = n1 - n2
+        return resultado
+    }
+
+    if (operacao == 'soma') {
+        soma(n1, n2)
+        document.write('o resultado é: ' + soma())
+    }
+    if (operacao == 'subtracao') {
+        subtracao(n1, n2)
+        document.write('o resultado é: ' + subtracao())
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript
+    </title>
+
+    <script>
+        function acao() {
+            alert('Evento Disparado!')
+        }
+    </script>
+
+</head>
+
+<body>
+    <div onclick="acao()" style="background: rgb(233, 232, 232); height: 150px; width: 150px;">Somente um Clique Ativa a Mensagem</div><br>
+    <div ondblclick="acao()" style="background: #b91a1a; height: 150px; width: 150px;">Somente dois Cliques Ativa a Mensagem</div><br>
+    <div onmouseup="acao()" style="background: rgb(42, 180, 8); height: 150px; width: 150px;">Somente precionar e soltar Ativa a Mensagem</div><br>
+    <div onmouseover="acao()" style="background: rgb(50, 8, 150); height: 150px; width: 150px;">Somente passando o maouse Ativa a Mensagem</div><br>
+    <div onmouseout="acao()" style="background: rgb(212, 11, 179); height: 150px; width: 150px;">Somente Retirando o mouse ativa a Mensagem </div><br>
+
+    <!--Os Eventos podem ser combinados podendo executar a mesma ação ou ações diferentes. Basta definir a função que deseja executar-->
+</body>
+
+</html>

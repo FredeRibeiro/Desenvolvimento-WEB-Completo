@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+    <script>
+        function acao() {
+            alert('Evento Diparado')
+        }
+    </script>
+</head>
+
+<body>
+    <h4>O Caracter sómente aparece apos a confirmação da ação</h4>
+    <input onkeydown="acao()" type="text"><br>
+    <h4>O Caracter sómente aparece apos a confirmação da ação, mas pode ser apagado sem a confirmação da mensagem</h4>
+    <input onkeypress="acao()" type="text"><br>
+    <h4>O Caracter aparece mesmo sem a confirmação da ação</h4>
+    <input onkeyup="acao()" type="text"><br>
+
+
+
+</body>
+
+</html>
