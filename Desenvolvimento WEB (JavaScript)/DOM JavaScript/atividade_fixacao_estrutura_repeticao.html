@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+    <script>
+        //Questão 1
+        var lista_frutas = Array();
+        lista_frutas[0] = 'Banana <br>';
+        lista_frutas[1] = 'Maçã <br>';
+        lista_frutas[2] = 'Morango <br>';
+        lista_frutas[3] = 'Uva <br>';
+        for (var i = 0; i < lista_frutas.length; i++) {
+            document.write(lista_frutas[i]);
+            console.log(lista_frutas[i])
+            document.write('<hr>')
+        }
+
+        //Questão 2
+        var x = 1;
+        var y = 1;
+        while (x <= 10) {
+            y = 0;
+            while (y <= 10) {
+                console.log(x + ' x ' + y + ' = ' + x * y);
+                document.write(x + ' x ' + y + ' = ' + x * y);
+                y++;
+            }
+            console.log("\n");
+            document.write("<hr/>");
+            x++;
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
