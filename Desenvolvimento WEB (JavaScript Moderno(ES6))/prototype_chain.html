@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+
+</head>
+
+<body>
+    <script>
+        Object.prototype.attr50 = 'Z'
+        let animal = {
+            attr1: 'a'
+        }
+        let vertebrado = {
+            __proto__: animal,
+            attr2: 'b'
+        }
+        let ave = {
+            __proto__: vertebrado,
+            attr2: 'x',
+            attr3: 'c'
+        }
+
+        console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50);
+    </script>
+</body>
+
+</html>
