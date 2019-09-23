@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+
+    <script>
+        //Destructing
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+        //let [a, b, , c] = frutas //Pular um indice
+        let [a, b, c, d, e] = frutas
+
+        console.log(a, b = 'Abacate', c, d, e = 'Banana') //Parametros Default
+
+        let coisas = [
+            ['Abacaxi', 'Uva', 'Pera', 'Mamão'],
+            ['José', 'Maria']
+        ]
+
+        let [, [, n2]] = coisas
+
+        console.log(n2);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel"></script>
+
+    <script>
+        //Composição
+        let produto = {
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: {
+                fabricante: 'abc',
+                modelo: 'xyz'
+            }
+        }
+
+        //Variação de Tokem Array => [] -- Objeto => {}
+        /* let {
+            descricao,
+            preco
+        } = produto */
+
+        /* let {
+            descricao: d,
+            preco: p
+        } = produto */
+
+        /* let {
+            descricao: d,
+            preco: p,
+            desconto
+        } = produto */
+
+        /*  let {
+             descricao: d,
+             preco: p,
+             desconto = 5
+         } = produto */
+
+        let {
+            detalhes: {
+                fabricante,
+                modelo
+            }
+        } = produto
+
+        console.log(fabricante, modelo);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
